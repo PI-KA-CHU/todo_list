@@ -1,13 +1,12 @@
 package com.thoughtworks.controller;
 
-import com.thoughtworks.Entity.TodoEntity;
+import com.thoughtworks.entity.TodoEntity;
 import com.thoughtworks.dto.TodoDto;
 import com.thoughtworks.service.TodoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -38,9 +37,4 @@ public class TodoController {
     todoService.updateTodo(id, todoEntity);
   }
 
-//  @GetMapping("/todos")
-//  @ResponseStatus(HttpStatus.OK)
-//  public void updateTodo(@RequestParam("id") int id) {
-//    todoService.deleteTodoById(id);
-//  }
 }

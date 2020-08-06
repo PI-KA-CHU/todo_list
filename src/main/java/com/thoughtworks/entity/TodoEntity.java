@@ -1,4 +1,4 @@
-package com.thoughtworks.Entity;
+package com.thoughtworks.entity;
 
 import javax.persistence.*;
 
@@ -10,6 +10,9 @@ public class TodoEntity {
     private int id;
     private String content;
     private boolean status;
+
+    public TodoEntity() {
+    }
 
     public TodoEntity(String content) {
         this.content = content;
