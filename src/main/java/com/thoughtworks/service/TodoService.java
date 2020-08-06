@@ -1,8 +1,7 @@
 package com.thoughtworks.service;
 
-import com.thoughtworks.Entity.TodoEntity;
+import com.thoughtworks.entity.TodoEntity;
 import com.thoughtworks.dto.TodoDto;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
