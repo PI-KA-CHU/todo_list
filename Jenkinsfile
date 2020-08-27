@@ -6,6 +6,13 @@ pipeline {
     }
     
     stages { 
+
+        stage('Build') {
+            steps {
+                echo 'build'
+                bat 'gradle build'
+            }
+        }
         
         stage ('OWASP Dependency-Check Vulnerabilities') {
             steps {
