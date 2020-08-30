@@ -6,6 +6,13 @@ pipeline {
     }
     
     stages { 
+        
+        stage('Test') {
+            steps {
+                echo 'test'
+                bat 'gradle test'
+            }
+        }
 
         stage('Build') {
             steps {
